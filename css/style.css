@@ -1,0 +1,124 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* Header */ 
+header{
+    background-color: #A4DF64;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header__logo{
+    display: flex;
+    align-items: center;
+
+}
+
+header .header__nombre{
+    align-items: center;
+    color: aliceblue;
+}
+
+
+header .header__logo img{
+    width: 120px;
+}
+
+.header__nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header__nav ul li{
+padding: 0px 20px;
+}
+
+/* Main - Home */
+.home{
+    padding: 0px 20px;
+}
+
+
+#banner{
+    height: 500px;
+    background-image: url(https://pngimage.net/wp-content/uploads/2018/06/fundo-verde-claro-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    height: min-content;
+}
+
+/* Main - Productos */
+.nuestros-productos{
+    padding: 0px 20px;
+}
+
+.productos .productos__titulo,
+.productos .productos__subtitulo{
+    text-align: center;
+    font-size: 30px;
+}
+
+.productos{
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+
+.contenedor-productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 20px 20px 20px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.tarjeta-producto{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tarjeta-producto__imagen{
+    width: 45%
+}
+
+/* Main - Tutoriales*/
+.nuestros-tutoriales{
+    padding: 0px 20px;
+}
+
+.contenedor-tutoriales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 20px 20px 20px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: #425928;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+}

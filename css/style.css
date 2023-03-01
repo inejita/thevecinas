@@ -5,9 +5,25 @@
     font-family: "Poppins";
 }
 
+/* Body */
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 300px 400px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+}
+
 /* Header */ 
 header{
     background-color: #A4DF64;
+    grid-area: header;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -61,6 +77,11 @@ padding: 0px 20px;
 }
 
 /* Main - Productos */
+main{
+    background-color: azure;
+    grid-area: main;
+}
+
 .nuestros-productos{
     padding: 0px 20px;
 }
@@ -116,6 +137,7 @@ padding: 0px 20px;
 /* Footer */
 footer{
     background-color: #425928;
+    grid-area: footer;
     padding: 20px;
     display: flex;
     justify-content: space-between;
